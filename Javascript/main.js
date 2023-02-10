@@ -51,18 +51,17 @@ let donebtns = document.getElementsByClassName("Done")
 
 for(let i = 0; i < buttons.length; i++){
     buttons[i].addEventListener("click", function() {            
-        tasks[i].priority++;                                     
+        tasks[i].priority++;
+        var maxPriority = 5;
+        if (tasks[i].priority <= maxPriority) {                                     
         console.log(tasks[i].priority);
-        document.getElementsByClassName("priority")[i].innerHTML = tasks[i].priority;
+        document.getElementsByClassName("priority")[i].innerHTML = tasks[i].priority;}
         if (tasks[i].priority < 2) {
             document.getElementsByClassName("priority")[i].style.backgroundColor = "green";
         } else if (tasks[i].priority < 4){
             document.getElementsByClassName("priority")[i].style.backgroundColor = "orange";
         } else {
             document.getElementsByClassName("priority")[i].style.backgroundColor = "red";
-        }
-        if (tasks[i].priority > 5){
-            document.getElementsByClassName("priority")[i].innerHTML = "5";
         }
     })
         //The delete-button removes the associated task-card from the display.
