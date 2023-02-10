@@ -1,3 +1,5 @@
+
+
 for(let val of tasks){
     document.getElementById("task-cards").innerHTML += `
 <div class="col">
@@ -16,6 +18,21 @@ for(let val of tasks){
     </div>
 </div>`;
 }
+
+
+function sorting () {tasks.sort(function(a, b) {
+    return b.priority - a.priority;
+    
+})
+}
+
+document.getElementById("sortPriority").addEventListener("click",sorting);
+
+console.log(tasks);
+
+
+
+
 
 let buttons = document.getElementsByClassName("PriorityBtn");
 
@@ -36,6 +53,5 @@ for(let i = 0; i < buttons.length; i++){
         }
     })
 }
-
 
 

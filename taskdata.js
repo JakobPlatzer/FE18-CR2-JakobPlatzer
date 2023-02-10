@@ -13,7 +13,7 @@ let tasks = [{
 }, {
 "taskName" : "Walking the dog", 
 "image" : "https://cdn.pixabay.com/photo/2016/11/26/23/45/dog-1861839_1280.jpg", 
-"description" : "Two longer walks for trainig, two times just for relief.", 
+"description" : "Two longer walks for training, two times just for relief.", 
 "priority" : 0, 
 "periodical" : "4x a day"  
 }, {

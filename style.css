@@ -19,3 +19,7 @@
 .priority {
     background-color: green;
 }
+
+#sortPriority {
+    cursor: pointer;
+}
