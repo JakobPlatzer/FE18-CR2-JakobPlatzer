@@ -1,3 +1,5 @@
+// This is the array of objects containing the tasks and their information
+
 let tasks = [{
     "taskName" : "Shopping", 
     "image" : "https://cdn.pixabay.com/photo/2015/08/07/16/07/shopping-879498_1280.jpg", 
