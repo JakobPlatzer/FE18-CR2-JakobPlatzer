@@ -5,4 +5,9 @@
     height: 70vh;
 }
 
+#subscribeButton {
+    background: none;
+    border: 2px solid white;
+}
+
 
