@@ -15,3 +15,7 @@
     height: 30vh;
     object-fit: cover;
 }
+
+.priority {
+    background-color: green;
+}
