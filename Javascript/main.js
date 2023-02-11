@@ -1,6 +1,7 @@
 //This block of code concerns the task-cards. They take the objects from taskdata.js and display them in the browser using cards.
 
-for(let val of tasks){              
+function displayTasks (objectArray) {
+    for(let val of objectArray){              
     document.getElementById("task-cards").innerHTML += `
         <div class="col taskcard">
             <div class="card shadow" style="width: 18rem;">
@@ -22,23 +23,21 @@ for(let val of tasks){
                 </div>
             </div>
         </div>`;
-}
+}}
+
+
+displayTasks(tasks);
 
 //This function sorts the array of tasks descending by priority.
-//The console.log shows a sorted array, after clicking the sorting button, but I can't manage to display the sorted array
+//The sorted array is displayed, but the buttons, don't work anymore, and priority counter changes color to green 
 
-// function sorting () {tasks.sort(function(a, b) {            
-    // return b.priority - a.priority;  
-// })
-// console.log(tasks);
-// 
-// }
-
-function sorting () {tasks.sort(function(a, b) {            
+function sorting () {
+    let sortedTasks = tasks.sort(function(a, b) {            
     return b.priority - a.priority;  
 })
 console.log(tasks);
-
+document.getElementById("task-cards").innerHTML="";
+displayTasks(sortedTasks);
 }
 
 //This gives <p>Sort Priority</p> the ability to sort the tasks array
